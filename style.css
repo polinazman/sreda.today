@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    width: 591px;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+}
+
+.logo {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 0px;
+    top: 0;
+
+    background: #063F1E;
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 65px;
+
+    position: absolute;
+    width: 30px;
+    height: 71px;
+    left: 28px;
+    top: 4px;
+
+    color: #FFFFFF;
+}
+
+.main_today {
+    position: absolute;
+    width: 382px;
+    height: 37px;
+    left: 110px;
+    top: 23px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #302F30;
+}
+
+.main_today a {
+    color: #0D8540;
+    text-underline-offset: 6px;
+}
+
+#arrow-down {
+    vertical-align: text-top;
+    padding-top: 10px;
+    padding-left: 2px;
+}
+
+.blog {
+    margin: 150px 0 80px 120px;
+    max-width: 600px;
+}
+
+.blog-post {
+    border-bottom: 1px solid #DBD7D8;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #DBD7D8;
+    height: 50px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
