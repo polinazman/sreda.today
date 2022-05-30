@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Среда - медиа с улиц Ханты-Мансийска</title>
-    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="style.css" type="text/css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">c</a>
+            <a href="#"><img src="img/sreda-logo.svg"/></a>
         </div>
-        <div class="main_head">
-            <div class="main_today">Главное за <a href="#">сегодня<img id="arrow-down" src="img/arrow-down.svg"/></a></div>
+        <div class="main-today">
+            Главное за <a href="#">сегодня<img id="arrow-down" src="img/arrow-down.svg"/></a>
+        </div>
+        <div class="create-btn">
+            <img src="img/create-plus.svg"/>
         </div>
     </header>
     <main>
         <div class="blog">
             <div class="blog-post">
-                <h2>Blogpost 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <btn>Read</btn>
-            </div>
-            <div class="blog-post">
-                <h2>Blogpost 2</h2>
-                <p>Sed ornare, augue sed sodales vulputate, purus ipsum condimentum mi, sed imperdiet nunc sem id lacus.</p>
-                <btn>Read</btn>
-            </div>
-            <div class="blog-post">
-                <h2>Blogpost 3</h2>
-                <p>Quisque egestas magna risus, ac ultrices nisl hendrerit tempor.</p>
-                <btn>Read</btn>
-            </div>
-            <div class="blog-post">
-                <h2>Blogpost 4</h2>
-                <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <btn>Read</btn>
+                <img class="post-img" src="img/default-photo.jpeg"/>
+                <div class="content-type">Редакция</div>
+                <h2 class="title">Карта вывоза снега Google разработала</h2>
+                <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="published-container">
+                    <img class="community-img" src="img/community.svg"/>
+                    <img class="author-img" src="img/author.png"/>
+                </div>
+                <div class="tags">
+                    <ul>
+                        <li><a href="#">Экология</a></li>
+                        <li><a href="#">Городские службы</a></li>
+                    </ul>
+                </div>
+                <div class="reaction-bar"></div>
             </div>
         </div>
     </main>
+    <div class="navbar">
+        <ul>
+            <li><a href="#"><img src="img/home-icon.svg"></a></li>
+            <li><a href="#"><img src="img/search-icon.svg"></a></li>
+            <li><a href="#"><img src="img/notification-icon.svg"></a></li>
+            <li><a href="#"><img src="img/user-icon.svg"></a></li>
+        </ul>
+    </div>
 </body>
-<footer>
-    <p>2022, Среда медиа</p>
-</footer>
 </html>
