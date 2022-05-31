@@ -121,7 +121,7 @@ header {
 .tags ul {
     padding: unset;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .tags li {
@@ -132,7 +132,7 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 10px;
     width: fit-content;
     padding: 7px 14px;
 }
