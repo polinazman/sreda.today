@@ -223,6 +223,7 @@ header {
 .reaction-bar {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .interaction-container, .score-container {
