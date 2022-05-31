@@ -2,6 +2,11 @@ body {
     margin: 0;
 }
 
+main {
+    margin-top: 65px;
+    margin-bottom: 50px;
+}
+
 a {
     text-decoration: unset;
     color: unset;
@@ -17,6 +22,8 @@ header {
     max-height: 55px;
     border-bottom: #F2EFF2 solid 1px;
     background-color: #FFF;
+    position: fixed;
+    top: 0;
 }
 
 .logo {
@@ -73,6 +80,7 @@ header {
 /* blog feed styles */
 .blog {
     margin: 0 15px;
+    padding-top: 30px;
 }
 
 .blog-post {
@@ -101,8 +109,14 @@ header {
 }
 
 .subtitle { 
-    font-size: 25;
+    font-size: 20px;
     font-weight: 400;
+}
+
+.published-container {
+    height: 100%;
+    margin: 10px 0;
+    font-size: 15px;
 }
 
 .community-img, .author-img {
@@ -118,10 +132,24 @@ header {
     z-index: -1;
 }
 
+.img-container, .publishing-info, .author-date div {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.publishing-info h3 {
+    font-size: 15px;
+    margin: unset;
+}
+
+.author-date {
+    font-weight: 400;
+    color: #706E70;
+    margin-bottom: 5px;
+}
+
 .tags ul {
     padding: unset;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .tags li {
@@ -135,6 +163,19 @@ header {
     font-size: 10px;
     width: fit-content;
     padding: 7px 14px;
+    margin-right: 10px;
+}
+
+.tags li a {
+    padding: 7px 0;
+}
+
+.reaction {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 6px 8px 1px 8px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
 }
 
 /* navbar bottom styles */
