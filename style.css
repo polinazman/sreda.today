@@ -97,6 +97,7 @@ header {
 
 .tab button {
     font-family: 'Roboto';
+    font-size: 14px;
     background-color: inherit;
     float: left;
     border: none;
@@ -147,7 +148,6 @@ header {
 .title {
     font-size: 32px;
     margin: unset;
-    padding-top: 12px;
 }
 
 .subtitle { 
@@ -159,7 +159,7 @@ header {
 .published-container {
     height: 100%;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     padding-top: 12px;
     color: #706E70;
 }
@@ -177,6 +177,11 @@ header {
     z-index: -1;
 }
 
+.single-author {
+    position: unset;
+    margin-right: 10px;
+}
+
 .img-container, .publishing-info, .author-date div, .publishing-info h3, .separator {
     display: inline-block;
     vertical-align: text-bottom;
@@ -190,6 +195,7 @@ header {
     font-size: 15px;
     margin: unset;
     color: #302F30;
+    font-weight: 500;
 }
 
 .author-date {
@@ -198,7 +204,7 @@ header {
 
 .tags ul {
     padding: unset;
-    margin: 10px 0;
+    margin: 12px 0;
 }
 
 .tags li {
@@ -230,11 +236,15 @@ header {
     display: inline;
 }
 
+.interaction-container .reaction:not(:first-child) {
+    margin-left: 10px;
+}
+
 .reaction {
     height: 16px;
     display: inline-block;
     padding: 6px 8px;
-    background-color: #F2F2F2;
+    background-color: #F7F7F7;
     border-radius: 4px;
     font-size: 14px;
     color: #8E8E8E;
@@ -243,6 +253,8 @@ header {
 
 .comment-count {
     display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
 .score {
@@ -256,6 +268,7 @@ header {
 
 .reaction img {
     height: 14px;
+    vertical-align: middle;
 }
 
 /* navbar bottom styles */
