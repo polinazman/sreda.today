@@ -1,0 +1,23 @@
+.login-container {
+    margin: 0 15px;
+    padding-top: 26px;
+}
+
+.login-container button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    margin: 12px auto;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.register-button {
+    border: none;
+    outline: none;
+    color: #FFF;
+    background-color: #0C783A;
+}

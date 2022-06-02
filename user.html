@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Среда - медиа с улиц Ханты-Мансийска</title>
     <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link href="user.css" type="text/css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -11,22 +12,25 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="#"><img src="img/sreda-logo.svg"/></a>
+        <div class="back-btn">
+            <btn><img src="img/back-icon.svg"/></btn>
         </div>
-        <div class="main-today">
-            Главное за <a href="#">сегодня<img id="arrow-down" src="img/arrow-down.svg"/></a>
-        </div>
-        <div class="create-container">
-             <button onclick="createFunction()" class="create-button">
-                <img src="img/create-plus.svg"/>
-            </button>
-            <div id="createDropdown" class="create-dropdown-content">
-                <a href="#">Вопрос</a>
-                <a href="#">Публикацию</a>
+        <div class="header-info">
+            <div>
+                <div class="header-title">Полина Змановская</div>
+                <div class="header-rating">+344</div>
             </div>
+            <div class="header-subtitle">2 публикации</div>
         </div>
     </header>
+    <div class="userpage-cover"></div>
+    <div class="user-about">
+        <img src="img/author.png" class="user-img"/>
+        <div class="user-buttons">
+            <div class="separator">&#x2022;&#x2022;&#x2022;</div>
+            <button class="subscribe-btn">Подписаться</button>
+        </div>
+    </div>
     <div class="tab">
         <button class="tablinks active">Популярное</button>
         <button class="tablinks">Вопросы</button>
@@ -133,27 +137,8 @@
             <li><a href="#"><img src="img/home-icon.svg"></a></li>
             <li><a href="#"><img src="img/search-icon.svg"></a></li>
             <li><a href="#"><img src="img/notification-icon.svg"></a></li>
-            <li><a href="login.html"><img src="img/user-icon.svg"></a></li>
+            <li><a href="#"><img src="img/user-icon.svg"></a></li>
         </ul>
     </div>
-
-<script>
-    function createFunction() {
-        document.getElementById("createDropdown").classList.toggle("show");
-    }
-
-    window.onclick = function(event) {
-        if (!event.target.matches('.create-button')) {
-        var dropdowns = document.getElementsByClassName("create-dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-            }
-        }
-        }
-    }
-</script>
 </body>
 </html>

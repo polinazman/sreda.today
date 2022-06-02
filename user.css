@@ -1,0 +1,91 @@
+/* user header styles */
+main {
+    margin-top: unset;
+}
+
+.back-btn {
+    margin-left: 15px;
+    height: 55px;
+}
+
+.back-btn img { 
+    height: 15px;
+}
+
+.header-info {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    padding-right: 10px;
+    padding-left: 15px;
+    width: 100%;
+    color: #302F30;
+}
+
+.header-title, .header-rating {
+    display: inline-block;
+    font-family: 'Roboto';
+    line-height: 100%;
+}
+
+.header-rating {
+    color: #0C783A;
+}
+
+.header-subtitle {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #706E70;
+}
+
+.userpage-cover {
+    background: url(img/default-cover.jpg);
+    height: 200px;
+    position: relative;
+    padding: 0 15px;
+}
+
+.user-about {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+
+.user-img {
+    display: inline-block;
+    height: 90px;
+    border: #FFF 2px solid;
+    border-radius: 50%;
+    margin-top: -47px;
+    z-index: 1;
+}
+
+.user-buttons {
+    padding-top: 12px;
+}
+
+.subscribe-btn {
+    border: none;
+    outline: none;
+    color: #FFF;
+    background-color: #0C783A;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 10px;
+}
+
+.tab {
+    margin-top: unset;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: #F2EFF2 solid 1px;
+    align-items: center;
+    background-color: #FFF;
+    position: unset;
+}
