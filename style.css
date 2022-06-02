@@ -58,17 +58,44 @@ header {
     color: #302F30;
 }
 
-.header-middle a {
-    color: #0D8540;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-}
-
 #arrow-down {
     vertical-align: text-top;
     padding-top: 8px;
     padding-left: 2px;
     height: 8px;
+}
+
+.today-button {
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #0D8540;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: unset;
+}
+
+.today-dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    overflow: auto;
+    background-color: #FFF;
+    min-width: fit-content;
+    box-shadow: 0px 1px 4px 1px rgba(12, 120, 58, 0.1);
+    border-radius: 0px 0px 8px 8px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.today-dropdown-content a {
+    display: block;
+    margin: 17px 12px;
 }
 
 .header-right {
@@ -77,27 +104,35 @@ header {
     padding-right: 15px;
 }
 
-.create-icon {
-
-}
-
 .create-button {
     border: #706E70 solid 1px;
     border-radius: 8px;
     outline: none;
-    background-color: #FFF;
+    background: url(img/create-plus.svg) no-repeat;
     cursor: pointer;
-    padding: 4px 5px;
+    height: 25px;
+    width: 25px;
+    background-size: 14px;
+    background-position: center;
 }
 
 .create-dropdown-content {
     display: none;
     position: absolute;
-    overflow: auto;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    left: -80px;
+    overflow: auto;
+    background-color: #FFF;
+    min-width: fit-content;
+    box-shadow: 0px 1px 4px 1px rgba(12, 120, 58, 0.1);
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.create-dropdown-content a {
+    display: block;
+    margin: 17px 12px;
 }
 
 .show {
@@ -370,6 +405,47 @@ header {
 
 .navbar img {
     height: 24px;
+}
+
+.account-button {
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #0D8540;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: unset;
+}
+
+.account-dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 100%;
+    overflow: auto;
+    background-color: #FFF;
+    min-width: fit-content;
+    box-shadow: 0px 1px 4px 1px rgba(12, 120, 58, 0.1);
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+}
+
+.account-dropdown-content a {
+    display: block;
+    margin: 17px 12px;
+    color: #302F30;
+}
+
+.show {
+    display: block;
 }
 
 /* footer styles */
