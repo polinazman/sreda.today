@@ -12,15 +12,17 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="#"><img src="img/sreda-logo.svg"/></a>
+        <div class="header-left">
+            <!-- <a href="#"><img src="img/sreda-logo.svg"/></a> -->
         </div>
-        <div class="main-today">
-            Главное за <a href="#">сегодня<img id="arrow-down" src="img/arrow-down.svg"/></a>
+        <div class="header-middle">
+            <!-- Главное за <a href="#">сегодня<img id="arrow-down" src="img/arrow-down.svg"/></a> -->
         </div>
-        <div class="create-container">
-             <button onclick="createFunction()" class="create-button">
-                <img src="img/create-plus.svg"/>
+        <div class="header-right">
+             <button class="close-button">
+                 <div>
+                    <a href="index.html"><img class="icon" src="img/close-icon.svg"/></a>
+                 </div>
             </button>
             <div id="createDropdown" class="create-dropdown-content">
                 <a href="#">Вопрос</a>
@@ -29,10 +31,13 @@
         </div>
     </header>
     <main>
+        <div class="logo-container">
+            <h1>Среда</h1>
+        </div>
         <div class="login-container">
             <div class="buttons-container">
                 <button class="register-button">
-                    Зарегистрироваться
+                    Создать аккаунт
                 </button>
                 <button class="login-button">
                     Войти
@@ -40,13 +45,5 @@
             </div>
         </div>
     </main>
-    <div class="navbar">
-        <ul>
-            <li><a href="#"><img src="img/home-icon.svg"></a></li>
-            <li><a href="#"><img src="img/search-icon.svg"></a></li>
-            <li><a href="#"><img src="img/notification-icon.svg"></a></li>
-            <li><a href="login.html"><img src="img/user-icon.svg"></a></li>
-        </ul>
-    </div>
 </body>
 </html>

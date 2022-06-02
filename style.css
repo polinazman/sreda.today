@@ -29,23 +29,23 @@ header {
     top: 0;
 }
 
-.logo {
+.header-left {
     display: inline-block;
     top: 0;
     left: 0;
 }
 
-.logo a {
+.header-left a {
     vertical-align: top;
     line-height: 0;
 }
 
-.logo img {
+.header-left img {
     width: 55px;
     height: 55px;
 }
 
-.main-today {
+.header-middle {
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
@@ -58,7 +58,7 @@ header {
     color: #302F30;
 }
 
-.main-today a {
+.header-middle a {
     color: #0D8540;
     text-decoration: underline;
     text-underline-offset: 6px;
@@ -71,21 +71,23 @@ header {
     height: 8px;
 }
 
-.create-container {
+.header-right {
     display: inline-block;
     position: relative;
     padding-right: 15px;
 }
 
-.create-container img {
-    height: 30px;
+.create-icon {
+
 }
 
 .create-button {
-    border: none;
+    border: #706E70 solid 1px;
+    border-radius: 8px;
     outline: none;
     background-color: #FFF;
     cursor: pointer;
+    padding: 4px 5px;
 }
 
 .create-dropdown-content {

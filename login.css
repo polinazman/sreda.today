@@ -1,10 +1,35 @@
+header {
+    border-bottom: unset;
+}
+
+.close-button icon {
+    height: 10px;
+}
+
+.header-right .close-button {
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #FFF;
+    cursor: pointer;
+    padding: 12px 5px;
+}
+
+.logo-container h1 {
+    font-family: 'Anonymous Pro';
+    font-size: 45px;
+    text-transform: lowercase;
+    color: #063F1E;
+    text-align: center;
+}
+
 .login-container {
     margin: 0 15px;
     padding-top: 26px;
 }
 
 .buttons-container {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
