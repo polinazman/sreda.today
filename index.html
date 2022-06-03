@@ -51,7 +51,12 @@
                     </div>
                     <div class="publishing-info">
                         <h3 class="written-by"><a href="#">Редакция "Среды"</a></h3>
-                        <div class="separator">&#x2022;&#x2022;&#x2022;</div>
+                        <button onclick="actionsFunction()" class=" separator post-actions-button">
+                            &#x2022;&#x2022;&#x2022;
+                            <div id="actionsDropdown" class="post-actions-content">
+                                <a href="#">Пожаловаться</a>
+                            </div>
+                        </button>
                         <div class="author-date">
                             <div class="author"><a href="#">Полина Змановская</a></div>
                             <div class="separator">&#x2022;</div>
@@ -133,11 +138,10 @@
     </main>
     <div class="navbar">
         <ul>
-            <li><a href="#"><img src="img/home-icon.svg"></a></li>
-            <li><a href="#"><img src="img/search-icon.svg"></a></li>
-            <li><a href="#"><img src="img/notification-icon.svg"></a></li>
-            <li><button onclick="accountFunction()" class="account-button">
-                <!-- <img src="img/user-icon.svg"> -->account
+            <li><button class="nav-button" style="background-image: url('img/home-icon.svg')"></button></li>
+            <li><button class="nav-button" style="background-image: url('img/search-icon.svg')"></button></li>
+            <li><button class="nav-button" style="background-image: url('img/notification-icon.svg')"></button></li>
+            <li><button onclick="accountFunction()" class="nav-button" style="background-image: url('img/user-icon.svg')">
                 <div id="accountDropdown" class="account-dropdown-content">
                     <a href="#">Закладки</a>
                     <a href="#">Публикации</a>
@@ -187,8 +191,25 @@
     }
 
     window.onclick = function(event) {
-        if (!event.target.matches('.account-button')) {
+        if (!event.target.matches('.nav-button')) {
         var dropdowns = document.getElementsByClassName("account-dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+        }
+    }
+
+    function actionsFunction() {
+        document.getElementById("actionsDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.post-actions-button')) {
+        var dropdowns = document.getElementsByClassName("post-actions-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];

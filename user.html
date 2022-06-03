@@ -134,10 +134,16 @@
     </main>
     <div class="navbar">
         <ul>
-            <li><a href="#"><img src="img/home-icon.svg"></a></li>
-            <li><a href="#"><img src="img/search-icon.svg"></a></li>
-            <li><a href="#"><img src="img/notification-icon.svg"></a></li>
-            <li><a href="#"><img src="img/user-icon.svg"></a></li>
+            <li><button class="nav-button" style="background-image: url('img/home-icon.svg')"></button></li>
+            <li><button class="nav-button" style="background-image: url('img/search-icon.svg')"></button></li>
+            <li><button class="nav-button" style="background-image: url('img/notification-icon.svg')"></button></li>
+            <li><button onclick="accountFunction()" class="nav-button" style="background-image: url('img/user-icon.svg')">
+                <div id="accountDropdown" class="account-dropdown-content">
+                    <a href="#">Закладки</a>
+                    <a href="#">Публикации</a>
+                    <a href="#">Выйти</a>
+                </div>
+            </button></li>
         </ul>
     </div>
 </body>
