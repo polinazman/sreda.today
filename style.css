@@ -94,7 +94,11 @@ header {
 
 .today-dropdown-content a {
     display: block;
-    margin: 17px 12px;
+    padding: 17px 12px;
+}
+
+.today-dropdown-content a:hover {
+    background-color: #F2F2F2;
 }
 
 .header-right {
@@ -131,7 +135,11 @@ header {
 
 .create-dropdown-content a {
     display: block;
-    margin: 17px 12px;
+    padding: 17px 12px;
+}
+
+.create-dropdown-content a:hover {
+    background-color: #F2F2F2;
 }
 
 .show {
@@ -162,7 +170,7 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 13px 16px;
     transition: 0.3s;
     color: #706E70;
 }
@@ -272,7 +280,15 @@ header {
     border-radius: 8px;
     font-family: 'Roboto';
     font-weight: 400;
-    padding: 10px 12px;
+}
+
+.post-actions-content a {
+    display: block;
+    padding: 12px 10px;
+}
+
+.post-actions-content a:hover {
+    background-color: #F2F2F2;
 }
 
 .publishing-info h3 {
@@ -457,8 +473,12 @@ header {
 
 .account-dropdown-content a {
     display: block;
-    margin: 17px 12px;
+    padding: 17px 12px;
     color: #302F30;
+}
+
+.account-dropdown-content a:hover {
+    background-color: #F2F2F2;
 }
 
 .show {
