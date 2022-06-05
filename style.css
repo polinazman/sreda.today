@@ -12,6 +12,22 @@ a {
     color: unset;
 }
 
+
+/* sidebar styles  */
+.left-sidebar {
+    display: none;
+    z-index: 11;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.left-sidebar-button {
+    border: none;
+    outline: none;
+    background-color: unset;
+    padding: unset;
+}
+
 /* header styles */
 header {
     display: flex;
@@ -37,7 +53,6 @@ header {
 
 .header-left a {
     vertical-align: top;
-    line-height: 0;
 }
 
 .header-left img {
@@ -206,6 +221,9 @@ header {
 .post-img {
     width: 100%;
     height: 200px;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16 / 9;
 }
 
 .content-type {
@@ -345,18 +363,14 @@ header {
     z-index: 1;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
     background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
-    background-image: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
-    background-image: -o-linear-gradient(180deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
-    background-image: -ms-linear-gradient(180deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
-    width: 100%;
+    background-image: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
+    background-image: -o-linear-gradient(270deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
+    background-image: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
+    min-width: 100%;
 }
 
 .question-info {
     padding: 50px 15px 10px 15px;
-}
-
-.question-content .title {
-    font-weight: 400px;
 }
 
 .question-answer p {
@@ -408,9 +422,27 @@ header {
     background-color: unset;
 }
 
+.score-container {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .score-count {
+    background-color: #F7F7F7;
+    color: #8E8E8E;
+    font-weight: 500;
+    text-align: center;
+}
+
+.score-count.positive {
     background-color: #F0FAF2;
     color: #0D8540;
+}
+
+.score-count.negative {
+    background-color: #FFE5E5;
+    color: #D91818;
 }
 
 .reaction img {
@@ -495,3 +527,32 @@ footer {
 }
 
 /* unauthorized screen styles */
+
+/* desktop styles */
+@media screen and (min-width: 541px) {
+    .blog {
+        margin: 0 25%;
+    }
+    header {
+        padding: 0 25%;
+        border-bottom: unset;
+    }
+    .tab {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .navbar ul {
+        justify-content: space-evenly;
+    }
+    .post-img {
+        height: 30vw;
+    }
+
+    .question-img {
+        height: 60vw;
+    }
+
+    .left-sidebar {
+        display: none;
+    }
+} 

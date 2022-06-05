@@ -1,0 +1,86 @@
+main {
+    margin-top: 55px;
+}
+.blog {
+    padding-top: 12px;
+}
+header {
+    transition: top 0.3s;
+}
+
+.open-post div {
+    padding-top: 3px;
+}
+
+#post-img {
+    margin: 0 -15px;
+    width: 100vw;
+}
+
+.open-post {
+    display: inline-block;
+    color: #706E70;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.post-body p {
+    color: #302F30;
+    font-weight: 400;
+}
+
+.comment-section {
+    margin: 0 15px;
+    font-family: 'Roboto';
+}
+
+.comment-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-img, .comment-author-date {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.comment-date {
+    color:#706E70;
+    font-size: 12px;
+}
+
+.comment-section h2 {
+    font-size: 16px;
+}
+.comment .comment-img {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    border: #FFF 2px solid;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.comment h3 {
+    font-size: 15px;
+    margin: unset;
+    color: #302F30;
+    font-weight: 500;
+}
+
+.comment-actions {
+    color: #706E70;
+    font-size: 14px;
+}
+.comment-actions a {
+    padding-right: 6px;
+}
+.comment {
+    padding: 10px 0 20px;
+}
+
+.comment.answer {
+    border-left: 1px solid #DBD7D8;
+    padding-left: 15px;
+}

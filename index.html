@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header-left">
-            <a href="#"><img src="img/sreda-logo.svg"/></a>
+            <button class="left-sidebar-button" onclick="sidebar_open()"><a href="#"><img src="img/sreda-logo.svg"/></a></button>
         </div>
         <div class="header-middle">
             Главное за <button onclick="dropdownFunction()" class="today-button">сегодня<img id="arrow-down" src="img/arrow-down.svg"/>
@@ -36,9 +36,15 @@
         <a href="#"><button class="tablinks">Сообщество</button></a>
     </div>
     <main>
+        <div class="left-sidebar" id="leftSidebar">
+            <button onclick="closeSidebar()" class="left-sidebar-item sidebar-button">Close &times;</button>
+            <a href="#" class="left-sidebar-item sidebar-button">Link 1</a>
+            <a href="#" class="left-sidebar-item sidebar-button">Link 2</a>
+            <a href="#" class="left-sidebar-item sidebar-button">Link 3</a>
+        </div>
         <div class="blog">
             <div class="blog-post">
-                <a href="#" class="post-wrap">
+                <a href="post.html" class="post-wrap">
                     <img class="post-img" src="img/default-photo.jpeg"/>
                     <div class="content-type">Редакция</div>
                     <h2 class="title">Карта вывоза снега Google разработала</h2>
@@ -219,6 +225,15 @@
             }
         }
         }
+    }
+
+    function sidebar_open() {
+        document.getElementById("leftSidebar").style.width = "80%";
+        document.getElementById("leftSidebar").style.display = "block";
+    }
+    
+    function sidebar_close() {
+        document.getElementById("leftSidebar").style.display = "none";
     }
 </script>
 </body>
