@@ -49,10 +49,12 @@ header {
     display: inline-block;
     top: 0;
     left: 0;
+    height: 55px;
 }
 
 .header-left a {
     vertical-align: top;
+    height: 100%;
 }
 
 .header-left img {
@@ -336,7 +338,6 @@ header {
     font-size: 12px;
     width: fit-content;
     padding: 7px 14px;
-    margin-right: 10px;
     margin-bottom: 10px;
 }
 
