@@ -50,7 +50,11 @@ header {
 }
 
 input::placeholder {
-    color: 706E70;
+    color: #706E70;
+}
+
+input:focus {
+    border: #0C783A solid 0.5px;
 }
 
 .login-button {

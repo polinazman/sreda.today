@@ -87,6 +87,12 @@
         <div class="comment-section">
             <h2 class="comment-section-header">Комментарии</h2>
             <div class="comment">
+                <div class="input-container">
+                    <textarea name="comment-input" placeholder="Написать комментарий..."></textarea>
+                    <div class="button-container">
+                        <button class="comment-btn">Отправить</button>
+                    </div>
+                </div>
                 <div class="comment-info">
                     <div class="published-info">
                         <a href="#"><img class="comment-img" src="img/comment-img.jpg"/></a>
@@ -145,18 +151,25 @@
         </ul>
     </div>
 <script>
+    var scrollTop = window.scrollTop;
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("header").style.top = "0";
             document.getElementById("navbar").style.bottom = "0";
-        } else {
+        }
+        else {
             document.getElementById("header").style.top = "-55px";
             document.getElementById("navbar").style.bottom = "-55px";
+
         }
         prevScrollpos = currentScrollPos;
+        if (scrollTop == currentScrollPos) {
+            document.getElementById("header").style.top = "0";
+            document.getElementById("navbar").style.bottom = "0";
         }
+    }
 </script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+.blog {
+    padding-top: 0;
+}
+
+.img-wrap.open-question {
+    margin: 0 -15px;
+    width: 100vw;
+}
+
+.question-content.overlay {
+    margin: 0;
+    width: 100vw;
+}
