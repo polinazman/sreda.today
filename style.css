@@ -257,8 +257,10 @@ header {
 .community-img, .author-img {
     display: inline-block;
     height: 32px;
+    width: 32px;
     border: #FFF 2px solid;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .author-img {
