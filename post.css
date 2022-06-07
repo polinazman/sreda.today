@@ -30,6 +30,12 @@ header {
     font-weight: 400;
 }
 
+.post-body.subtitle {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
 .subscribe-btn {
     vertical-align: top;
     float: right;
