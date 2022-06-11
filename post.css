@@ -25,6 +25,26 @@ header {
     margin-bottom: 12px;
 }
 
+.open-post a:first-child  {
+    font-weight: 700;
+    color: #302F30;
+}
+
+.open-post .author {
+    display: inline-block;
+    margin-left: -3px;
+    vertical-align: baseline;
+}
+
+.open-post .img-container {
+    vertical-align: top;
+}
+
+.open-post img {
+    height: 22px;
+    width: 22px;
+}
+
 .post-body p {
     color: #302F30;
     font-weight: 400;
@@ -61,7 +81,7 @@ header {
     font-size: 12px;
 }
 
-.comment-section h2 {
+h2.section-heading {
     font-size: 16px;
     margin-bottom: unset;
 }
