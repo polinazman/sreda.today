@@ -230,6 +230,7 @@ header {
     object-fit: cover;
     object-position: center;
     aspect-ratio: 16 / 9;
+    background-color: #C0BEC0;
 }
 
 .content-type {
