@@ -69,7 +69,7 @@ header {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    padding-right: 10px;
+    padding-right: 15px;
     padding-left: 15px;
     width: 100%;
     color: #302F30;
@@ -466,6 +466,10 @@ header {
     bottom: 0;
     width: 100%;
     z-index: 10;
+}
+
+.empty {
+    display: none;
 }
 
 .navbar ul {

@@ -21,7 +21,7 @@
                 <div class="header-title">Новости</div>
                 <div class="header-rating positive">+34</div>
             </div>
-            <div class="header-subtitle">Экология</div>
+            <div class="header-subtitle">Городские службы</div>
         </div>
         <div class="header-right">
             <div class="separator">&#x2022;&#x2022;&#x2022;</div>
@@ -31,7 +31,7 @@
         <div class="blog">
             <div class="blog-post">
                 <div class="post-wrap">
-                    <h2 class="title">Карта вывоза снега Google разработала</h2>
+                    <h2 class="title">Городская карта (не)вывоза снега</h2>
                     <div class="subtitle">Собрали карту дворов, где за три месяца не вывозили снег.</div>
                     <div class="publishing-info open-post">
                         <div class="author-date">
@@ -71,7 +71,6 @@
                 </div>
                 <div class="tags">
                     <ul>
-                        <li><a href="#">Экология</a></li>
                         <li><a href="#">Городские службы</a></li>
                         <li><a href="#">Cреда</a></li>
                     </ul>
@@ -163,17 +162,14 @@
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("header").style.top = "0";
-            document.getElementById("navbar").style.bottom = "0";
         }
         else {
             document.getElementById("header").style.top = "-55px";
-            document.getElementById("navbar").style.bottom = "-55px";
 
         }
         prevScrollpos = currentScrollPos;
         if (scrollTop == currentScrollPos) {
             document.getElementById("header").style.top = "0";
-            document.getElementById("navbar").style.bottom = "0";
         }
     }
 </script>

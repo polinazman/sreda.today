@@ -106,6 +106,18 @@ main {
     padding: 8px 10px;
 }
 
+.subscribe-btn:active {
+    background-color: #FFF;
+    outline: #0C783A solid 1px;
+    color: #0C783A;
+}
+
+.subscribe-btn.subsribed {
+    background-color: #FFF;
+    outline: #0C783A solid 1px;
+    color: #0C783A;
+}
+
 .user-details {
     font-family: 'Roboto';
     margin: 20px 15px 12px;
