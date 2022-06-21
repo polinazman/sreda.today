@@ -15,7 +15,7 @@
 <body>
     <header id="header">
         <div class="header-left">
-            <a href="index.html"><button class="back-button"></button></a>
+            <button class="back-button" onclick="javascript:history.back()"></button>
         </div>
         <div class="header-middle">
             <div>
@@ -95,9 +95,9 @@
     </main>
     <div class="navbar" id="navbar">
         <ul>
-            <li><button class="nav-button" style="background-image: url('img/home-icon.svg')"></button></li>
-            <li><button class="nav-button" style="background-image: url('img/search-icon.svg')"></button></li>
-            <li><button class="nav-button" style="background-image: url('img/notification-icon.svg')"></button></li>
+            <a href="index.html"><li><button class="nav-button" style="background-image: url('img/home-icon.svg')"></button></li></a>
+            <a href="search.html"><li><button class="nav-button" style="background-image: url('img/search-icon.svg')"></button></li></a>
+            <a href="notific.html"><li><button class="nav-button" style="background-image: url('img/notification-icon.svg')"></button></li></a>
             <li><button onclick="accountFunction()" class="nav-button" style="background-image: url('img/user-icon.svg')">
                 <div id="accountDropdown" class="account-dropdown-content">
                     <a href="#">Закладки</a>

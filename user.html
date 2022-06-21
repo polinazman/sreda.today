@@ -13,12 +13,12 @@
 <body>
     <header>
         <div class="header-left">
-            <button class="back-button"></btn>
+            <button class="back-button" onclick="javascript:history.back()"></button>
         </div>
         <div class="header-middle">
             <div>
                 <div class="header-title">Полина Змановская</div>
-                <div class="header-rating">+344</div>
+                <div class="header-rating positive">344</div>
             </div>
             <div class="header-subtitle">2 публикации</div>
         </div>
@@ -37,7 +37,7 @@
     <div class="user-details">
         <div class="detail-heading">
             <div class="header-title user-name">Полина Змановская</div>
-            <div class="header-rating user-rating">+344</div>
+            <div class="header-rating user-rating positive">344</div>
         </div>
         <div class="details-sub">
             <div class="user-id">@polina_zman</div>
@@ -68,7 +68,7 @@
                 <a href="post.html" class="post-wrap">
                     <img class="post-img" src="img/default-photo.jpeg"/>
                     <div class="content-type">Редакция</div>
-                    <h2 class="title">Карта вывоза снега Google разработала</h2>
+                    <h2 class="title">Городская карта (не)вывоза снега</h2>
                     <div class="subtitle">Собрали карту дворов, где за три месяца не вывозили снег.</div>
                 </a>
                 <div class="published-container">
@@ -101,7 +101,7 @@
                     </div>
                     <div class="score-container">
                         <div class="reaction score"><img src="img/minus-icon.svg"/></div>
-                        <div class="reaction score-count">34</div>
+                        <div class="reaction score-count positive">34</div>
                         <div class="reaction score"><img src="img/plus-icon.svg"/></div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <div class="question-content overlay">
                         <div class="question-info">
                             <div class="content-type">Вопрос</div>
-                            <h2 class="title">Многоэтажки - это плохо?</h2>
+                            <h2 class="title">Зачем нужны велодорожки?</h2>
                             <div class="author">Кирилл Загоскин</div>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                     </div>
                     <div class="score-container">
                         <div class="reaction score"><img src="img/minus-icon.svg"/></div>
-                        <div class="reaction score-count">34</div>
+                        <div class="reaction score-count positive">21</div>
                         <div class="reaction score"><img src="img/plus-icon.svg"/></div>
                     </div>
                 </div>
@@ -160,9 +160,9 @@
     </main>
     <div class="navbar" id="navbar">
         <ul>
-            <li><button class="nav-button" style="background-image: url('img/home-icon.svg')"></button></li>
-            <li><button class="nav-button" style="background-image: url('img/search-icon.svg')"></button></li>
-            <li><button class="nav-button" style="background-image: url('img/notification-icon.svg')"></button></li>
+            <a href="index.html"><li><button class="nav-button" style="background-image: url('img/home-icon.svg')"></button></li></a>
+            <a href="search.html"><li><button class="nav-button" style="background-image: url('img/search-icon.svg')"></button></li></a>
+            <a href="notific.html"><li><button class="nav-button" style="background-image: url('img/notification-icon.svg')"></button></li></a>
             <li><button onclick="accountFunction()" class="nav-button" style="background-image: url('img/user-icon.svg')">
                 <div id="accountDropdown" class="account-dropdown-content">
                     <a href="#">Закладки</a>

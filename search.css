@@ -2,28 +2,32 @@ header {
     border-bottom: unset;
 }
 
-main {
-    margin-top: 70px;
+.search-area {
+    margin: 0 15px;
+    padding-top: 2px;
 }
 
 .search-field {
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     width: 100%;
-    padding: 10px 14px 10px 40px;
-    margin: 20px auto;
-    background: #F2F2F2 url(img/search-icon.svg) no-repeat 12px center;
+    padding: 10px 12px;
     background-size: 16px;
+    border: #0C783A solid 1px;
 }
 
 .search-field:focus {
-    outline: #0C783A solid 1px;
+    outline: #0C783A solid 0.5px;
 }
 
-.promotion {
-    padding-top: 0;
+.promotion-container {
+    padding-top: 10px;
+}
+
+.promotion-container .tags ul {
+    margin-top: unset;
 }

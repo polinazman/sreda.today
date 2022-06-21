@@ -9,6 +9,10 @@ header {
     box-shadow: rgb(12 120 58 / 5%) 0px 1px 4px 1px;
 }
 
+.blog-post {
+    padding-top: unset;
+}
+
 .open-post div {
     padding-top: 3px;
 }
