@@ -21,7 +21,7 @@ header {
 }
 
 .search-field:focus {
-    outline: #0C783A solid 0.5px;
+    outline: #0C783A solid 1px;
 }
 
 .promotion-container {

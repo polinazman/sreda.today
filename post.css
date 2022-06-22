@@ -61,13 +61,21 @@ header {
 
 }
 
+.published-container {
+    padding-top: unset;
+}
+
+.tags li { 
+    margin-bottom: 6px;
+}
+
 .subscribe-btn {
     vertical-align: top;
     float: right;
 }
 
 .comment-section {
-    margin: 0 15px;
+    margin: 24px 15px;
     font-family: 'Roboto';
 }
 
