@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Среда - медиа с улиц Ханты-Мансийска</title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link href="create.css" type="text/css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="img/create-icon-header.svg"/>
+        </div>
+        <div class="header-middle">
+            <button onclick="dropdownFunction()" class="today-button question-post">Написать<img id="arrow-down" src="img/arrow-down-black.svg"/>
+                <div id="todayDropdown" class="today-dropdown-content">
+                    <a href="create-question.html">Спросить</a>
+                </div>
+                </button>
+        </div>
+        <div class="header-right empty">
+        </div>
+    </header>
+    <main>
+    </main>
+    <div class="navbar">
+        <ul>
+            <a href="index.html"><li><button class="nav-button" style="background-image: url('img/home-icon.svg')"></button></li></a>
+            <a href="search.html"><li><button class="nav-button" style="background-image: url('img/search-icon.svg')"></button></li></a>
+            <li><button class="nav-button" style="background-image: url('img/notification-icon.svg')"></button></li>
+            <li><button onclick="accountFunction()" class="nav-button" style="background-image: url('img/user-icon.svg')">
+                <div id="accountDropdown" class="account-dropdown-content">
+                    <a href="#">Закладки</a>
+                    <a href="#">Публикации</a>
+                    <a href="#">Выйти</a>
+                </div>
+            </button></li>
+        </ul>
+    </div>
+<script>
+        function dropdownFunction() {
+        document.getElementById("todayDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.today-button')) {
+        var dropdowns = document.getElementsByClassName("today-dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+        }
+    }
+</script>
+</body>
+</html>
