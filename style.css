@@ -125,10 +125,10 @@ header {
 }
 
 .create-button {
-    border: #706E70 solid 1px;
+    border: none;
     border-radius: 4px;
     outline: none;
-    background: url(img/create-plus.svg) no-repeat;
+    background: #F7F7F7 url(img/create-icon.svg) no-repeat;
     cursor: pointer;
     height: 25px;
     width: 25px;

@@ -17,7 +17,7 @@ header {
     width: 100%;
     padding: 10px 12px;
     background-size: 16px;
-    border: #0C783A solid 1px;
+    border: #0C783A solid 1.5px;
 }
 
 .search-field:focus {
