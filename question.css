@@ -12,10 +12,21 @@
     width: 100vw;
 }
 
+.question-img {
+    margin: 0;
+}
+
 .new-answer {
     display: none;
 }
 
 .new-answer.no-answer {
     display: block;
+}
+
+@media screen and (min-width: 541px) {
+    .question-img, .question-content.overlay, .img-wrap.open-question {
+        width: 100%;
+        margin: 0;
+    }
 }

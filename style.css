@@ -103,7 +103,8 @@ header {
     background-color: #FFF;
     min-width: fit-content;
     box-shadow: 0px 1px 4px 1px rgba(12, 120, 58, 0.1);
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 8px 8px;
+    margin-top: 5px;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
@@ -111,7 +112,17 @@ header {
 
 .today-dropdown-content a {
     display: block;
-    padding: 17px 12px;
+    padding: 10px 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #302F30;
+    font-weight: 300;
+    text-align: left;
+}
+
+.today-dropdown-content a.active {
+    color: #0C783A;
+    font-weight: 500;
 }
 
 .today-dropdown-content a:hover {
@@ -130,9 +141,9 @@ header {
     outline: none;
     background: #F7F7F7 url(img/create-icon.svg) no-repeat;
     cursor: pointer;
-    height: 25px;
-    width: 25px;
-    background-size: 14px;
+    height: 30px;
+    width: 30px;
+    background-size: 16px;
     background-position: center;
 }
 
@@ -585,8 +596,9 @@ footer {
     .navbar ul {
         justify-content: space-evenly;
     }
-    .post-img {
-        height: 30vw;
+    #post-img {
+        height: 25vw;
+        width: 100%;
     }
 
     .question-img {
