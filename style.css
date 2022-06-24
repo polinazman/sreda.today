@@ -470,7 +470,7 @@ header {
     justify-content: space-evenly;
     padding: 10px 0;
     color: #FFF;
-    background-color: #0D8540;
+    background-color: #0C783A;
     font-family: 'Roboto';
     font-size: 14px;
     align-items: baseline;
@@ -480,7 +480,7 @@ header {
     font-family: inherit;
     border: none;
     outline: none;
-    color: #0D8540;
+    color: #0C783A;
     background-color: #FFF;
     border-radius: 5px;
     font-weight: 500;
