@@ -112,7 +112,7 @@ header {
 
 .today-dropdown-content a {
     display: block;
-    padding: 10px 8px;
+    padding: 10px 12px;
     font-size: 17px;
     font-weight: 500;
     color: #302F30;
@@ -599,13 +599,17 @@ footer {
     #post-img {
         height: 25vw;
         width: 100%;
+        margin: 0;
     }
-
     .question-img {
         height: 60vw;
     }
 
     .left-sidebar {
         display: none;
+    }
+
+    .search-area {
+        margin: 0 25%;
     }
 } 

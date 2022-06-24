@@ -31,3 +31,9 @@ header {
 .promotion-container .tags ul {
     margin-top: unset;
 }
+
+@media screen and (min-width: 541px) {
+    .search-area {
+        margin: 0 25%;
+    }
+}
