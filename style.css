@@ -235,6 +235,7 @@ header {
 
 .blog-post:last-child {
     border-bottom: none;
+    padding-bottom: 40px;
 }
 
 .post-img {
