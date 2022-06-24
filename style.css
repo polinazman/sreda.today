@@ -460,6 +460,33 @@ header {
     vertical-align: middle;
 }
 
+/* banner styles */
+.banner {
+    position: fixed;
+    bottom: 45px;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    color: #FFF;
+    background-color: #0D8540;
+    font-family: 'Roboto';
+    font-size: 14px;
+    align-items: baseline;
+}
+
+.banner-btn {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    color: #0D8540;
+    background-color: #FFF;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 8px 10px;
+}
+
 /* navbar bottom styles */
 .navbar {
     border-top: #F2EFF2 solid 1px;
