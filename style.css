@@ -151,7 +151,7 @@ header {
     display: none;
     position: absolute;
     z-index: 1;
-    left: -80px;
+    left: -70px;
     overflow: auto;
     background-color: #FFF;
     min-width: fit-content;
@@ -346,6 +346,7 @@ header {
 .tags ul {
     padding: unset;
     margin: 12px 0;
+    color: #302F30;
 }
 
 .tags li {
@@ -364,6 +365,10 @@ header {
 
 .tags li a {
     padding: 7px 0;
+}
+
+.question-tags ul {
+    margin-bottom: 0;
 }
 
 /* question post styles */
@@ -543,7 +548,7 @@ header {
     display: none;
     position: absolute;
     z-index: 1;
-    right: 15%;
+    right: 0;
     bottom: 100%;
     overflow: auto;
     background-color: #FFF;
@@ -605,7 +610,9 @@ footer {
     .question-img {
         height: 60vw;
     }
-
+    .account-dropdown-content {
+        right: 15%;
+    }
     .left-sidebar {
         display: none;
     }

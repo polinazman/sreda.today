@@ -65,10 +65,6 @@ header {
     padding-top: unset;
 }
 
-.tags li { 
-    margin-bottom: 6px;
-}
-
 .subscribe-btn {
     vertical-align: top;
     float: right;
@@ -96,7 +92,6 @@ header {
 
 h2.section-heading {
     font-size: 16px;
-    margin-bottom: unset;
 }
 
 .input-container {
