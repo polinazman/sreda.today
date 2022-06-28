@@ -249,20 +249,23 @@ header {
 
 .content-type {
     color: #706E70;
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 10px;
     padding: 6px 0;
 }
 
 .title {
-    font-size: 28px;
+    font-size: 26px;
     margin: unset;
     padding-bottom: 12px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: bold;
 }
 
 .subtitle { 
     font-size: 16px;
     font-weight: 400;
+    font-family: 'Inter', sans-serif;
 }
 
 .published-container {
@@ -394,6 +397,7 @@ header {
     background-image: -o-linear-gradient(270deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
     background-image: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
     min-width: 100%;
+    height: fit-content;
 }
 
 .question-info {
