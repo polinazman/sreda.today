@@ -396,7 +396,7 @@ header {
     background-image: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
     background-image: -o-linear-gradient(270deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
     background-image: -ms-linear-gradient(270deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.65) 68.75%);
-    min-width: 100%;
+    width: 100%;
     height: fit-content;
 }
 
