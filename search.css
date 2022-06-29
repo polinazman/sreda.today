@@ -20,6 +20,7 @@ header {
     padding: 10px 12px;
     background-size: 16px;
     border: #0C783A solid 1.5px;
+    -webkit-appearance: none;
 }
 
 .search-field:focus {
