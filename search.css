@@ -9,6 +9,8 @@ header {
 
 .search-field {
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -21,7 +23,9 @@ header {
 }
 
 .search-field:focus {
-    outline: #0C783A solid 1px;
+    box-shadow: 0 0 0 1px #0C783A;
+    -webkit-box-shadow: 0 0 0 1px #0C783A;;
+    outline: none;
 }
 
 .promotion-container {

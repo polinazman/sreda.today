@@ -64,10 +64,10 @@ header {
 
 .header-middle {
     display: inline-block;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 19px;
     padding-right: 15px;
     padding-left: 15px;
@@ -93,6 +93,7 @@ header {
     font-size: inherit;
     font-weight: inherit;
     padding: unset;
+    font-family: inherit;
 }
 
 .today-dropdown-content {
@@ -105,9 +106,7 @@ header {
     box-shadow: 0px 1px 4px 1px rgba(12, 120, 58, 0.1);
     border-radius: 8px 8px;
     margin-top: 5px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 16px;
+    font-family: 'Inter', sans-serif;
 }
 
 .today-dropdown-content a {
@@ -118,6 +117,7 @@ header {
     color: #302F30;
     font-weight: 300;
     text-align: left;
+    font-size: 16px;
 }
 
 .today-dropdown-content a.active {
@@ -151,19 +151,21 @@ header {
     display: none;
     position: absolute;
     z-index: 1;
-    left: -70px;
+    right: 0;
     overflow: auto;
     background-color: #FFF;
     min-width: fit-content;
     box-shadow: 0px 1px 4px 1px rgba(12, 120, 58, 0.1);
     border-radius: 8px;
-    font-family: 'Roboto';
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    width: max-content;
 }
 
 .create-dropdown-content a {
     display: block;
-    padding: 17px 12px;
+    padding: 10px 12px;
+    color: #302F30;
 }
 
 .create-dropdown-content a:hover {
@@ -194,7 +196,7 @@ header {
 }
 
 .tab button {
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     background-color: inherit;
     float: left;
@@ -226,7 +228,7 @@ header {
 .blog-post {
     border-bottom: 1px solid #DBD7D8;
     width: 100%;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #302F30;
@@ -235,7 +237,7 @@ header {
 
 .blog-post:last-child {
     border-bottom: none;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .post-img {
@@ -250,20 +252,21 @@ header {
 .content-type {
     color: #706E70;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 13px;
     padding: 6px 0;
 }
 
 .title {
-    font-size: 26px;
+    font-size: 28px;
     margin: unset;
     padding-bottom: 12px;
     font-family: 'Anonymous Pro', monospace;
     font-weight: bold;
+    color: #063F1E;
 }
 
 .subtitle { 
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
 }
@@ -322,7 +325,7 @@ header {
     min-width: fit-content;
     box-shadow: 0px 1px 4px 1px rgba(12, 120, 58, 0.1);
     border-radius: 8px;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
@@ -357,10 +360,10 @@ header {
     display: inline-block;
     background-color: #F2F2F2;
     border-radius: 20px;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     width: fit-content;
     padding: 7px 14px;
     margin-bottom: 10px;
@@ -380,7 +383,9 @@ header {
     color: #FFF;
     width: 100%;
 }
-
+.question-wrap .title {
+    color: #FFF;
+}
 .question-img {
     height: 430px;
     object-fit: cover;
@@ -404,9 +409,19 @@ header {
     padding: 50px 15px 10px 15px;
 }
 
+.question-info .author {
+    font-size: 14px;
+}
+
+.question-info .tags li {
+    background-color: rgba(242, 242, 242, 0.2);
+    color: #FFF;
+}
+
 .question-answer p {
     margin: 12px 0;
     color: #302F30;
+    font-size: 16px;
 }
 
 .read-more {
@@ -492,7 +507,7 @@ header {
     padding: 10px 0;
     color: #FFF;
     background-color: #0C783A;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     align-items: baseline;
 }
@@ -559,7 +574,7 @@ header {
     min-width: fit-content;
     box-shadow: 0px 1px 4px 1px rgba(12, 120, 58, 0.1);
     border-radius: 8px;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
     text-align: left;

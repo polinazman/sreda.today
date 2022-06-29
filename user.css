@@ -17,16 +17,10 @@ main {
 }
 
 .header-middle {
-    display: inline-block;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 14px;
     padding-right: 10px;
-    padding-left: 15px;
-    width: 100%;
-    color: #302F30;
 }
 
 .header-right {
@@ -35,7 +29,7 @@ main {
 
 .header-title, .header-rating {
     display: inline-block;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     line-height: 100%;
 }
 
@@ -86,7 +80,7 @@ main {
 
 .user-buttons {
     padding-top: 12px;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
 }
 
 .user-buttons .separator {
@@ -95,7 +89,7 @@ main {
 }
 
 .subscribe-btn {
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     border: none;
     outline: none;
     color: #FFF;

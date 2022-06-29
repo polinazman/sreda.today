@@ -30,12 +30,9 @@
         <div class="blog">
             <div class="blog-post">
                 <div class="post-wrap">
-                    <h2 class="title">Городская карта (не)вывоза снега</h2>
+                    <h2 class="title open-post">Городская карта (не)вывоза снега</h2>
                     <div class="subtitle">Собрали карту дворов, где за три месяца не вывозили снег.</div>
                     <div class="publishing-info open-post">
-                        <div class="author-date">
-                            <div class="date">5 мая 2022 12:45</div>
-                        </div>
                         <div class="published-container">
                             <div class="img-container">
                                 <a href="#"><img class="community-img" src="img/community.svg"/></a>
@@ -45,6 +42,8 @@
                                 <a href="#">Редакция "Среды"</a>
                                 <div class="separator">&#x2022;</div>
                                 <a href="user.html">Полина Змановская</a>
+                                <div class="separator">&#x2022;</div>
+                                <div class="date">5 мая 2022</div>
                             </div>
                         </div>
                     </div>
@@ -90,13 +89,13 @@
         </div>
         <div class="comment-section">
             <h2 class="section-heading">Комментарии</h2>
-            <div class="comment">
-                <div class="input-container">
-                    <textarea name="comment-input" placeholder="Написать комментарий..."></textarea>
-                    <div class="button-container">
-                        <button class="comment-btn">Отправить</button>
-                    </div>
+            <div class="comment input-container">
+                <textarea name="comment-input" placeholder="Написать комментарий..."></textarea>
+                <div class="button-container">
+                    <button class="comment-btn">Отправить</button>
                 </div>
+            </div>
+            <div class="comment">
                 <div class="comment-info">
                     <div class="published-info">
                         <a href="#"><img class="comment-img" src="img/comment-img.jpg"/></a>
@@ -167,9 +166,9 @@
 
         }
         prevScrollpos = currentScrollPos;
-        // if (scrollTop == currentScrollPos) {
-        //     document.getElementById("header").style.top = "0";
-        // }
+        if (scrollTop == currentScrollPos) {
+            document.getElementById("header").style.top = "0";
+        }
     }
 </script>
 </body>

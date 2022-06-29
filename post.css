@@ -23,15 +23,16 @@ header {
 }
 
 .open-post {
-    display: inline-block;
-    color: #706E70;
     font-weight: 400;
-    font-size: 14px;
     margin-bottom: 12px;
 }
 
+.title.open-post{
+    margin: 12px 0 0;
+}
+
 .open-post a:first-child  {
-    font-weight: 700;
+    font-weight: 500;
     color: #302F30;
 }
 
@@ -39,6 +40,12 @@ header {
     display: inline-block;
     margin-left: -3px;
     vertical-align: baseline;
+    font-size: 12px;
+}
+
+.open-post .date {
+    display: inline-block;
+    font-size: 12px;
 }
 
 .open-post .img-container {
@@ -46,19 +53,22 @@ header {
 }
 
 .open-post img {
-    height: 22px;
-    width: 22px;
+    height: 18px;
+    width: 18px;
 }
 
 .post-body p {
     color: #302F30;
     font-weight: 400;
+    font-size: 17px;
 }
 
 .post-body.subtitle {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 500;
-
+    font-family: 'Anonymous Pro', monospace;
+    color: #063F1E;
+    margin: 30px 0 0;
 }
 
 .published-container {
@@ -72,7 +82,7 @@ header {
 
 .comment-section {
     margin: 24px 15px;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
 }
 
 .comment-info {
@@ -109,7 +119,7 @@ h2.section-heading {
     border: #F2EFF2 solid 1.5px;
     word-break: break-word;
     resize: none;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     background: #FFF;
 }
 
@@ -127,7 +137,7 @@ h2.section-heading {
     justify-content: right;
 }
 .comment button {
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     border: none;
     outline: none;
     color: #FFF;
@@ -165,9 +175,11 @@ h2.section-heading {
     color: #706E70;
     font-size: 14px;
 }
+
 .comment-actions a {
     padding-right: 6px;
 }
+
 .comment {
     padding: 10px 0 20px;
 }
