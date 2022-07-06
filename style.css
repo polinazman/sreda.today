@@ -252,7 +252,7 @@ header {
 .content-type {
     color: #706E70;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
     padding: 6px 0;
 }
 
@@ -269,6 +269,10 @@ header {
     font-size: 17px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+}
+
+.separator {
+    font-family: 'Arial';
 }
 
 .published-container {
